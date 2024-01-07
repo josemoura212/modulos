@@ -1,6 +1,7 @@
 mod operacoes;
 
 use operacoes::matematica as mat;
+use rand::random;
 
 // use operacoes::matematica::somar;
 // use operacoes::matematica::subtrair;
@@ -9,4 +10,6 @@ use operacoes::matematica as mat;
 fn main() {
     println!("2 + 2 = {}\n", mat::somar(2, 2));
     println!("2 - 2 = {}\n", mat::subtrair(2, 2));
+
+    println!("Numero aleatorio: {}", random::<u8>());
 }
